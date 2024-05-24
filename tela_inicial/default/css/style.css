@@ -194,7 +194,7 @@ li a{
   border-radius: 20px;
   border: 0;
   margin-top: .5rem;
-  background-color: #2d6475;
+  background-color: #004684;
   font-weight: 500;
   background-image: url(../../assets/printer.svg);
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ li a{
 .btMenuPrint:hover{
   transform: scale(1.1) ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
-  background-color: #278dac;
+  background-color: #92ACCE;
 }
 .menuPrint{
   border: 0;
@@ -594,7 +594,9 @@ ul {
 }
 
 .voltar-topo{
-  margin-top: 20px;
+  display: block;
+  height: 74px;
+  width: 74px;
 }
 
 .mover-fazer{
@@ -667,52 +669,58 @@ ul {
 
 .circulo-1 {
   position: absolute;
-  left: -250px;
+  left: -100px;
   z-index: 3;
+  transform: rotate(40deg);
 }
 .circulo-1 svg {
-  height: 500px;
-  width: 500px;
+  height: 200px;
+  width: 200px;
 }
 .circulo-2 {
-  background-color: #fed06e;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  background-color: #92acce;
+  height: 100px;
+  width: 100px;
+  transform: rotate(15deg);
   position: absolute;
-  top: 260px;
-  left: -125px;
+  top: 400px;
+  left: 0;
 }
 .circulo-3 {
+  background-color: #92acce;
+  height: 100px;
+  width: 100px;
+  transform: rotate(200deg);
   position: absolute;
-  bottom: -250px;
-  right: -140px;
+  right: -100px;
+  bottom: -500px;
+}
+.circulo-3 svg{
+  height: 300px;
+  width: 300px;
 }
 .circulo-4 {
-  background-color: #fed06e;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+  background-color: #92acce;
+  height: 100px;
+  width: 100px;
+  transform: rotate(15deg);
   position: absolute;
   bottom: 50px;
   right: 30px;
 }
 @media screen and (max-width: 1810px) {
   .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
-    transform: scale(0.7);
+    
     z-index: 9;
   }
 }
 @media screen and (max-width: 1680px) {
   .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
-    transform: scale(0.5);
+   
     z-index: 9;
   }
-  .circulo-1 {
-    left: -300px;
-  }
   .circulo-2 {
-    top: 150px;
+    top: 210px;
     z-index: 2;
   }
   .circulo-4 {

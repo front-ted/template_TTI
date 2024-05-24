@@ -19,7 +19,7 @@
 
 body {
     background-image: url('../../01_experimentacao/img/textura.png');
-    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
+    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 106% 114%, #004684 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #fc9e49 0%, transparent 25%);
     position: relative;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -43,7 +43,7 @@ body {
 }
 
 .topo-logo {
-    background: url('../images/asset_circulo.svg') no-repeat left -25px center,
+    background: url('../images/circulo_ripado.svg') no-repeat left -25px center,
         url('../images/senac_logo.svg') no-repeat right 5% center;
     background-size: auto, 70px;
     height: 80px;
@@ -475,7 +475,7 @@ tbody td:first-child {
     border-bottom: 2px dashed;
     background: none;
 }
-
+.popover.show{z-index: 1000;}
 .popover-header {
     margin-top: 0;
     color: #fff;
@@ -533,32 +533,13 @@ tbody td:first-child {
 .grafismo::after {
     content: '';
     display: block;
-    background: url('../images/elemento.png') no-repeat;
+    background: url('../images/circulo_ripado.svg') no-repeat;
     height: 256px;
     width: 260px;
     bottom: -83px;
     right: -76px;
     position: absolute;
     scale: 0.8;
-}
-
-.grafismo.grafismoLeft::after {
-    top: none;
-    left: -88px;
-    right: none;
-    bottom: -88px;
-}
-
-.grafismo.grafismoLeft::before {
-    content: '';
-    display: block;
-    background: url('../../02_contexto_organizacao/img/elemento.png') no-repeat;
-    height: 49px;
-    width: 49px;
-    bottom: 10px;
-    right: -60px;
-    position: absolute;
-    z-index: 10;
 }
 
 
@@ -734,7 +715,7 @@ tbody td:first-child {
 .box-atividade::before {
     content: '';
     display: block;
-    background: url('../images/asset_circulo.svg') no-repeat;
+    background: url('../images/circulo_ripado.svg') no-repeat;
     height: 211px;
     width: 211px;
     top: -60px;
@@ -752,7 +733,7 @@ tbody td:first-child {
     top: -25px;
     margin: auto;
     left: -10px;
-    background: url('../images/ico_atividade_desafio.svg') no-repeat;
+    background: url('../images/ico_atividade.svg') no-repeat;
     background-size: contain;
 }
 
