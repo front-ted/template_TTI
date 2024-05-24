@@ -627,7 +627,7 @@ tbody td:first-child {
 }
 
 .destaque.icone.atividade::before {
-    background: url('../images/ico_atividade_desafio.svg') no-repeat;
+    background: url('../images/ico_atividade.svg') no-repeat;
 }
 
 .destaque.icone.visualizar::before {
